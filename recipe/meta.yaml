@@ -14,9 +14,9 @@ source:
   sha256: 81db271d891afbe13b4cc44a67573ddfef6df9ce7c10f87895fdd074219d813f
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 0
-  skip: true  # [win32]
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
@@ -42,8 +42,7 @@ about:
   summary: ' A suite of elliptic and related functions including Weierstrass and Jacobi forms.  Also
     includes various tools for manipulating and visualizing complex functions.'
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-2'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
 extra:
   recipe-maintainers:
