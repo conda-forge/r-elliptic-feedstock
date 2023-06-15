@@ -1,11 +1,11 @@
-About r-elliptic
-================
+About r-elliptic-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-elliptic-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/RobinHankin/elliptic.git
 
 Package license: GPL-2
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-elliptic-feedstock/blob/main/LICENSE.txt)
 
 Summary:  A suite of elliptic and related functions including Weierstrass and Jacobi forms.  Also includes various tools for manipulating and visualizing complex functions.
 
