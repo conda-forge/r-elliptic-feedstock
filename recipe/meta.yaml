@@ -1,4 +1,4 @@
-{% set version = '1.4-0' %}
+{% set version = "1.5-0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/elliptic_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/elliptic/elliptic_{{ version }}.tar.gz
-  sha256: b65729b1a1c7a84a5b1a59bfc893a2d35106853eaadcae31cda5c9ee3c500bb6
+  sha256: c52583a115ec298dee59e201e734513b94e54bee3798e74ca1a7a38f89599495
 
 build:
-  number: 6
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -36,8 +36,7 @@ test:
 about:
   home: https://github.com/RobinHankin/elliptic.git
   license: GPL-2
-  summary: ' A suite of elliptic and related functions including Weierstrass and Jacobi forms.  Also
-    includes various tools for manipulating and visualizing complex functions.'
+  summary: ' A suite of elliptic and related functions including Weierstrass and Jacobi forms.  Also includes various tools for manipulating and visualizing complex functions.'
   license_family: GPL2
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
