@@ -1,4 +1,4 @@
-{% set version = "1.5-0" %}
+{% set version = "1.5-1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/elliptic_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/elliptic/elliptic_{{ version }}.tar.gz
-  sha256: c52583a115ec298dee59e201e734513b94e54bee3798e74ca1a7a38f89599495
+  sha256: e6ecfddf7a1a2c6e40889e42f5a7e2e5693a99359d190dda6fdceb2bf93bc901
 
 build:
   number: 0
